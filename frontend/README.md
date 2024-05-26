@@ -14,7 +14,7 @@ To successfully run this code on your browser or to start the frontend developme
 
  2. Install node on your device
 
- 3. install npm:
+ 3. install Node Package Manager (npm):
 
         npm install
 
