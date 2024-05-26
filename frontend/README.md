@@ -16,12 +16,12 @@ To run this code or to start the frontend development server follow the steps be
 
  3. install npm:
 
-        `npm install`
+        npm install
 
  4. make sure you are in the frontend folder/directory:
- 
-        `cd frontend`
+
+        cd frontend
 
  5. Start the development Server:
 
-        ` npm run dev`
+        npm run dev
