@@ -1,0 +1,1 @@
+To start the admin panel follow these steps
