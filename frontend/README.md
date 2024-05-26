@@ -8,11 +8,11 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
 
-To run this code or to start the frontend development server follow the steps below:
+To successfully run this code on your browser or to start the frontend development server follow the steps below:
  1. Make sure you have node already installed if not, download node from:
         https://nodejs.org/en/download/package-manager
 
- 2. Install node
+ 2. Install node on your device
 
  3. install npm:
 
