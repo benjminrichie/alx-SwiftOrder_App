@@ -175,7 +175,7 @@ export const food_list = [
         _id: "4",
         name: "Chicken Salad",
         image: food_4,
-        price: 2900,
+        price: 200,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Spaghetti"
     }, {
