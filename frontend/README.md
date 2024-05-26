@@ -9,8 +9,19 @@ Currently, two official plugins are available:
 
 
 To run this code or to start the frontend development server follow the steps below:
- 1. install npm
+ 1. Make sure you have node already installed if not, download node from:
+        https://nodejs.org/en/download/package-manager
+
+ 2. Install node
+
+ 3. install npm:
+
         `npm install`
 
- 2. Start the development Server
+ 4. make sure you are in the frontend folder/directory:
+ 
+        `cd frontend`
+
+ 5. Start the development Server:
+
         ` npm run dev`
