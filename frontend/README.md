@@ -18,7 +18,7 @@ To successfully run this code on your browser or to start the frontend developme
 
         npm install
 
- 4. make sure you are in the frontend folder/directory:
+ 4. make sure you are in the `frontend` folder/directory:
 
         cd frontend
 

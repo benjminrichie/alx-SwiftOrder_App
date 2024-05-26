@@ -1,4 +1,7 @@
-To start the backend Server make sure you are in the `backend` folder/directory
-Then run
+1. To start the backend Server make sure you are in the `backend` folder/directory
+
+        cd backend
+
+2. Start the Server
 
         npm run server
