@@ -112,7 +112,7 @@ export const assets = {
     parcel_icon
 }
 
-// EXPORT MENU LIST ITEMS
+
 export const menu_list = [
     {
         menu_name: "Cake",
@@ -380,3 +380,14 @@ export const food_list = [
         category: "Noodles"
     }
 ]
+
+
+
+// import Authors
+import ben from './ben.jpg'
+
+//export Authors
+
+export const authors = {
+    ben
+}
