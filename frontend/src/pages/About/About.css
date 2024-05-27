@@ -5,6 +5,7 @@
     justify-content: space-between;
     font-size: large;
     font-style: normal;
+    box-shadow: 5px 5px 10px black;
 }
 
 .text{
@@ -34,6 +35,7 @@
 .benjamin .ben{
     border: 1px solid green;
     border-radius: 100px;
+    box-shadow: 5px 5px 10px black;
 }
 
 .about img:hover{
@@ -43,9 +45,11 @@
 .robert .rob{
     border: 1px solid green;
     border-radius: 100px;
+    box-shadow: 5px 5px 10px black;
 }
 
 .destiny .des{
     border: 1px solid green;
     border-radius: 100px;
+    box-shadow: 5px 5px 10px black;
 }
