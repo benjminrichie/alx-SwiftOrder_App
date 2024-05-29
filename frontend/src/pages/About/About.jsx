@@ -1,39 +1,35 @@
 import React from 'react'
 import './About.css'
 import { authors } from '../../assets/assets'
+import MyAuthors from '../../components/MyAuthors/MyAuthors'
+import { authorDetails } from '../../assets/authorDetails'
 
 const About = () => {
   return (
-    <div className='about'>
-      <div className='benjamin'>
-        <img className='ben' src={authors.ben} alt="" />
-        <div className="text">
-          <h3>Benjamin Richard</h3>
-          <p>Frontend</p>
-          <small>benjminrichie@gmail.com</small>
-          <h6>07081868797</h6>
-        </div>
-      </div>
-      <div className='robert'>
-        <img className='rob' src={authors.ben} alt="" />
-        <div className="text">
-          <h3>Abayomi Robert Onawole</h3>
-          <p>Backend</p>
-          <small>Abayomirobertonawole2@gmail.com</small>
-          <h6>09160765827</h6>
-        </div>
-      </div>
-      <div className='destiny'>
-        <img className='des' src={authors.ben} alt="" />
-        <div className="text">
-          <h3>Destiny Aghafekokhian</h3>
-          <p>Backend</p>
-          <small>destiny.aghafekokhian200@gmail.com</small>
-          <h6>09015069742</h6>
-        </div>
-      </div>
+    <div className="about">
+      <MyAuthors
+        id={authorDetails[0].id}
+        name={authorDetails[0].name}
+        designation={authorDetails[0].designation}
+        email={authorDetails[0].email}
+        phone={authorDetails[0].phone}
+      />
+      <MyAuthors
+        id={authorDetails[1].id}
+        name={authorDetails[1].name}
+        designation={authorDetails[1].designation}
+        email={authorDetails[1].email}
+        phone={authorDetails[1].phone}
+      />
+      <MyAuthors
+        id={authorDetails[2].id}
+        name={authorDetails[2].name}
+        designation={authorDetails[2].designation}
+        email={authorDetails[2].email}
+        phone={authorDetails[2].phone}
+      />
     </div>
-  )
+  );
 }
 
 export default About
