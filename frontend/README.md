@@ -14,15 +14,15 @@ To successfully run this code on your browser or to start the frontend developme
 
  2. Install node on your device
 
- 3. install Node Package Manager (npm):
-
-        npm install
-
- 4. make sure you are in the `frontend` folder/directory:
+ 3. make sure you are in the `frontend` folder/directory:
 
         cd frontend
 
- 5. Install the following
+ 4. install Node Package Manager (npm):
+
+        npm install
+
+ 5. Install the following additional packages
        
        i. Fontawesome:
        
