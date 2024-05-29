@@ -2,8 +2,12 @@
 
         cd backend
 
-2. Start the Server
+2. npm init 
+     
+      entrypoint => server.js
 
+3. npm install express mongose jsonwebtoken bcrypt cors dotenv body-parser multer stripe validator and nodemon
+
+4.  Start the Server
+       
         npm run server
-
-3. npm install express mongose json webtoken bcrypt cors dotenv body-parser multer stripe validator and nodemon
