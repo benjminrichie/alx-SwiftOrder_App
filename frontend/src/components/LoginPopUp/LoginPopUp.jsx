@@ -9,7 +9,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 
 
 const LoginPopUp = ({setShowLogin}) => {
-
+  // const { url, setToken } = useContext(StoreContext);
   const [currState, setcurrState] = useState("Login");
   const [data, setData] = useState({
     name: "",
@@ -71,41 +71,22 @@ const LoginPopUp = ({setShowLogin}) => {
   
 
   return (
-   <div className='login-PopUp'>
+    <div className='login-PopUp'>
       {notification.message && (
         <div className={`notification ${notification.type}`}>
           {notification.message}
         </div>
       )}
-      
-      {/* <form onSubmit={onLogin} className="loginPopUpContainer"> */}
       <form  className="loginPopUpContainer">
         <div className="loginPopUpTitle">
           <h2>{currState}</h2>
-          <img onClick={() => setShowLogin(false)} src={assets.cross_icon} alt="Close" />
+          <img onClick={()=>setShowLogin(false)} src={assets.cross_icon} alt="" />
         </div>
-
         <div className="loginPopUpInput">
-          {currState !== 'Login' && (
-            <input
-              name='name'
-              onChange={onChangeHandler}
-              value={data.name}
-              type="text"
-              placeholder='Your name'
-              required
-            />
-          )}
-          <input
-            name='email'
-            onChange={onChangeHandler}
-            value={data.email}
-            type="email"
-            placeholder='Your email'
-            required
-          />
+          {currState==="Login"?<></>:<input name='name' onChange={onChangeHandler} value={data.name} type="text" placeholder='Your name' required />}
+          <input name='email' onChange={onChangeHandler} value={data.email} type="email" placeholder='Your email' required />
           <div className="password-input-container">
-            <input
+          <input
               name='password'
               onChange={onChangeHandler}
               value={data.password}
@@ -116,22 +97,21 @@ const LoginPopUp = ({setShowLogin}) => {
             <span className="password-toggle-icon" onClick={toggleShowPassword}>
             <i className={showPassword ? 'fas fa-eye-slash' : 'fas fa-eye'}></i>
           </span>
-            
           </div>
         </div>
-        <button type='submit'>{currState === 'Sign Up' ? 'Create account' : 'Login'}</button>
+        <button type='submit'>{currState==="Sign Up"?"Create Account":"Login"}</button>
         <div className="loginPopUpCondition">
           <input type="checkbox" required />
-          <p className='continuee'>By continuing, I agree to the terms of use & privacy policy</p>
+          <p>By continuing, you agree to Terms of Use and Privacy Policy</p>
         </div>
-        {currState === 'Login'
-          ? <p>Create a new account? <span onClick={() => setCurrState('Sign Up')}>Click here</span></p>
-          : <p>Already have an account? <span onClick={() => setCurrState('Login')}>Login here</span></p>
+        {currState==="Login"
+        ?<p>Don't have an account? <span className='mySpan' onClick={()=>setcurrState("Sign Up")}>Click Here</span></p>
+        :<p>Already have an account? <span className='mySpan' onClick={()=>setcurrState("Login")}>Login</span></p>
         }
       </form>
     </div>
-  );
-};
+  )
+}
+
 
 export default LoginPopUp
-
