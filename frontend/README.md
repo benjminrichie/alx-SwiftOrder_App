@@ -23,6 +23,7 @@ To successfully run this code on your browser or to start the frontend developme
         cd frontend
 
  5. Install the following
+ 
        i. Fontawesome
        
        npm install --save @fortawesome/fontawesome-free
