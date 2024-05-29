@@ -24,7 +24,7 @@ To successfully run this code on your browser or to start the frontend developme
 
  5. Install the following
        
-   i. Fontawesome:
+       i. Fontawesome:
        
         npm install --save @fortawesome/fontawesome-free
 
