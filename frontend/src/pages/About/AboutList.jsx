@@ -9,6 +9,7 @@ const AboutList = ({authorDetails}) => {
     const AboutComponent = authorDetails.map((user, i) => {
   
       return <MyAuthors 
+        key={i}
         id={authorDetails[i].id}
         name={authorDetails[i].name}
         designation={authorDetails[i].designation}
