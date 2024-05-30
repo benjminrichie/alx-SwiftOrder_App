@@ -8,7 +8,8 @@ const AboutList = ({authorDetails}) => {
 
     const AboutComponent = authorDetails.map((user, i) => {
   
-      return <MyAuthors 
+      return (
+      <MyAuthors 
         key={i}
         id={authorDetails[i].id}
         name={authorDetails[i].name}
@@ -16,6 +17,7 @@ const AboutList = ({authorDetails}) => {
         email={authorDetails[i].email}
         phone={authorDetails[i].phone}
         />
+      )
     })
 
   return (
