@@ -1,7 +1,7 @@
 import React from 'react'
 import './MyAuthors.css'
 import { authors } from '../../assets/assets'
-import { authorDetails } from '../../assets/authorDetails'
+// import { authorDetails } from '../../assets/authorDetails'
 
 const MyAuthors = ({id, name, designation, email, phone}) => {
   return (
