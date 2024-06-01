@@ -50,6 +50,7 @@
     cursor: pointer;
 }
 
+
 .navSearchIcon {
     display: flex;
     align-items: center;
@@ -135,6 +136,118 @@
         display: block;
     }
 }
+
+.navbar-profile{
+    position: relative;
+}
+
+.nav-profile-dropdown{
+    position: absolute;
+    display: none;
+    right: 0;
+    z-index: 1;
+}
+
+.navbar-profile:hover .nav-profile-dropdown{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #fff2ef;
+    padding: 12px 25px;
+    border-radius: 4px;
+    border: 1px solid rgb(116, 208, 125);
+    outline: 2px solid white;
+    list-style: none;
+}
+
+
+:root .navbar-profile:hover .nav-profile-dropdown{
+    color: rgb(34, 120, 17);
+    background-color: var(--body-color);
+    border: 1px solid rgb(52, 100, 13);
+    outline: 2px solid white;
+}
+
+.nav-profile-dropdown li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.nav-profile-dropdown img {
+    width: 20px;
+}
+
+.nav-profile-dropdown li:hover{
+    color: rgb(71, 111, 255);
+}
+
+/* .notification {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    animation: slideInDown 0.5s ease-in-out;
+} */
+
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px; /* Adjust as needed */
+    background-color: #4caf50; /* Green color for success */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    animation: slideInRight 0.5s forwards, slideOutLeft 0.5s forwards 2s;
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOutLeft {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
+
+.success {
+    background-color: #4caf50;
+    color: white;
+}
+
+.error {
+    background-color: #f44336;
+    color: white;
+}
+
+/* @keyframes slideInDown {
+    0% {
+        transform: translate(-50%, -100%);
+    }
+    100% {
+        transform: translate(-50%, 0);
+    }
+} */
 
 
 @media (max-width: 350px) {

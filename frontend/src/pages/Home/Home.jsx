@@ -3,20 +3,18 @@ import './Home.css'
 import Header from '../../components/Header/Header'
 import Menu from '../../components/Menu/Menu'
 import FoodDisplay from '../../components/FoodDisplay/FoodDisplay'
-import DownloadApp from '../../components/DownloadApp/DownloadApp'
-// import BackToTopArrow from '../../components/BackToTopArrow/BackToTopArrow'
+import AppDownload from '../../components/AppDownload/AppDownload'
 
 const Home = () => {
 
-  const [category,setCategory] = useState("All");
-
+    const [category,setCategory] = useState("All");
+    
   return (
     <div>
-        <Header />
-        <Menu category={category} setCategory={setCategory} />
+        <Header/>
+        <Menu category={category} setCategory={setCategory}/>
         <FoodDisplay category={category}/>
-        <DownloadApp />
-        {/* <BackToTopArrow /> */}
+        <AppDownload/>
     </div>
   )
 }
