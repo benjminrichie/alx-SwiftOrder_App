@@ -1,6 +1,7 @@
-import React from "react";
-import "./Footer.css";
-import { assets } from "../../assets/assets";
+import React from 'react'
+import './Footer.css'
+import { assets } from '../../assets/assets'
+
 
 function Footer() {
   return (

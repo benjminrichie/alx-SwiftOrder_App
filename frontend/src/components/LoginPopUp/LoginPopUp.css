@@ -1,4 +1,4 @@
-.login-PopUp {
+.login-popup{
     position: fixed;
     /* width: 30%;
     height: 60%; */
@@ -13,7 +13,30 @@
     z-index: 1;
 }
 
-.loginPopUpContainer {
+/* :root .login-popup-title{
+    color: white;
+}
+
+.lightcolors .login-popup-title{
+    color: black;
+}
+
+
+:root .login-popup-container {
+    background-color: var(--body-color);
+}
+
+.lightcolors .login-popup-container {
+    background-color: white; 
+}
+
+.continuee{
+    position: relative;
+    top: 4px;
+} */
+
+
+.login-popup-container{
     position: relative;
     place-self: center;
     width: max(23vw,330px);
@@ -29,26 +52,22 @@
     font-size: 14px;
     animation: fadeIn 1.5s;
 }
-
-.loginPopUpTitle {
+.login-popup-title{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: black;
+    color: black;   
 }
-
-
-.loginPopUpTitle img {
+.login-popup-title img{
     width: 16px;
     cursor: pointer;
 }
-.loginPopUpInput{
+.login-popup-inputs{
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-
-.loginPopUpInput input{
+.login-popup-inputs input{
     outline: none;
     border: 1px solid rgb(12, 184, 55);
     padding: 10px;
@@ -56,8 +75,7 @@
     font-size: 15px;
     font-family: 'Times New Roman', Times, serif;
 }
-
-.loginPopUpContainer button{
+.login-popup-container button{
     border: none;
     padding: 10px;
     border-radius: 10px;
@@ -67,8 +85,12 @@
     font-family: 'Times New Roman', Times, serif;
     cursor: pointer;
 }
-
-
+.login-popup-condition{
+    display: flex;
+    align-items: start;
+    gap: 8px;
+    margin-top: -15px;
+}
 .loginPopUpCondition p{
     display: flex;
     align-items: start;
@@ -77,15 +99,16 @@
     margin-top: -36px;
     font-family: 'Times New Roman', Times, serif;
 }
-
-.login-PopUp p span{
+/* .login-popup-condition input{
+    margin-top: 5px;
+} */
+.login-popup p span{
     font-weight: 700;
     font-size: 17px;
     cursor: pointer;
     color: rgb(4, 158, 42);
     text-decoration: underline;
 }
-
 
 .notification {
     position: fixed;

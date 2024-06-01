@@ -1,5 +1,6 @@
 import React from 'react'
 import './About.css'
+
 // import { authors } from '../../assets/assets'
 // import MyAuthors from '../../components/MyAuthors/MyAuthors'
 import { authorDetails } from '../../assets/authorDetails'
