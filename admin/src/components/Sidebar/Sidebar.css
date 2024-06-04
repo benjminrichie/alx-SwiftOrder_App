@@ -4,6 +4,7 @@
     border: 1.5px solid #a9a9a9;
     border-top: 0;
     font-size: max(1vw, 10px);
+    background-color: rgb(37, 38, 80);
 }
 .sidebar-options{
     padding-top: 50px;
@@ -25,7 +26,7 @@
 
 .sidebar-option.active{
     background-color: var(--sidebar);
-    border-color: tomato;
+    border-color: rgb(17, 28, 172);
 }
 
 
