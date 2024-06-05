@@ -10,7 +10,7 @@ import { useNavigate } from 'react-router-dom'
 
 // Cart
 const Cart = () => {
-  const { cartItems, food_list, removeFromCart, getTotalCartAmount } = useContext(StoreContext);
+  const { cartItems, food_list, removeFromCart, getTotalCartAmount,url } = useContext(StoreContext);
 
   const navigate = useNavigate();
 
@@ -32,7 +32,8 @@ const Cart = () => {
             if (cartItems[item._id] > 0) {
               return (
                 <div className="cart-items-item" key={index}>
-                  <img src={item.image} alt={item.name} />
+                  <img src={url+"/images/"+item.image} alt="" />
+                  {/* <img src={item.image} alt={item.name} /> */}
                   <p>{item.name}</p>
                   <p>₦{item.price}</p>
                   <p>{cartItems[item._id]}</p>
@@ -55,12 +56,12 @@ const Cart = () => {
               <hr />
               <div className="cartTotalDeails">
                 <p>Delivery Fee</p>
-                <p>₦ {getTotalCartAmount()===0?0:2}</p>
+                <p>₦ {getTotalCartAmount()===0?0:500}</p>
               </div>
               <hr />
               <div className="cartTotalDeails">
                 <b>Total</b>
-                <b>₦{getTotalCartAmount()===0?0:getTotalCartAmount()+2}</b>
+                <b>₦{getTotalCartAmount()===0?0:getTotalCartAmount()+500}</b>
               </div>
             </div>
             <button onClick={()=>navigate('/Order')}>PROCEED TO CHECKOUT</button>

@@ -7,6 +7,8 @@
       entrypoint => server.js
 
 3. npm install express mongoose jsonwebtoken bcrypt cors dotenv body-parser multer stripe validator and nodemon
+ 
+ i. npm install bcrypt
 
 4.  Start the Server
        
