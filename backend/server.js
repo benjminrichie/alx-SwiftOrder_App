@@ -14,7 +14,13 @@ const port = 5000
 
 // middleware
 app.use(express.json())
-app.use(cors())
+app.use(cors(
+    // {
+    //     origin: ["https://https://alx-swift-order-1d9b0jbvy-benjamin-richards-projects.vercel.app"],
+    //     methods: ["POST", "GET"],
+    //     credentials: true
+    // }// for vercel deployment
+))
 
 // db connection
 connectDB();
