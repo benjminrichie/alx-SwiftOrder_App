@@ -77,8 +77,19 @@ import bag_icon from './bag_icon.png'
 import logout_icon from './logout_icon.png'
 import parcel_icon from './parcel_icon.png'
 
+
+import x from './x.png'
+import ig from './ig.png'
+import git from './git.png'
+import linkedin from './linkedin.png'
+
+
 // EXPORT ASSETS
 export const assets = {
+    x,
+    ig,
+    git,
+    linkedin,
     logo,
     basket_icon,
     header_img,
@@ -385,9 +396,13 @@ export const food_list = [
 
 // import Authors
 import ben from './ben.jpg'
+import yomex from './yomex.jpeg'
+import destiny from './destiny.jpeg'
 
 //export Authors
 
 export const authors = {
-    ben
+    ben,
+    yomex,
+    destiny
 }

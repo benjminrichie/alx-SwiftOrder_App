@@ -11,14 +11,10 @@ function Footer() {
           <img className="logo" src={assets.logo} alt="" />
           <p>We are the best in food delivery.</p>
           <div className="footerSocialIcons">
-            <a href="https://twitter.com/benjminrichie">
-              <img src={assets.twitter_icon} alt="" />
-            </a>
-            <a href="https://www.facebook.com/benjminrichie">
-            <img src={assets.facebook_icon} alt="" />
-            </a>
-            <a href="https://www.linkedin.com/in/benjminrichie/">
-            <img src={assets.linkedin_icon} alt="" />
+            <a href="https://github.com/benjminrichie/alx-SwiftOrder_App">
+            <img src={assets.git} alt="" />
+            <br />
+            <small href="https://github.com/benjminrichie/alx-SwiftOrder_App">source code</small>
             </a>
           </div>
         </div>

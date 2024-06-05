@@ -8,3 +8,39 @@
 .about img:hover{
     transform: scale(1.05);
 }
+
+.aboutWriteUp{
+    margin: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutWriteUp p{
+    text-align: center;
+    color: rgb(7, 7, 65);
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#mySpan{
+    color: rgb(9, 173, 9);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.aboutIconsContainer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bensIcons img{
+    padding: 5px;
+}
+
+.yomexIcons img{
+    padding: 5px;
+}
+
+.destinyIcons img{
+    padding: 5px;
+}

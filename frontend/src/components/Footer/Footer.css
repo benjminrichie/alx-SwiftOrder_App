@@ -40,7 +40,12 @@
 
 .footerSocialIcons img{
     width: 40px;
-    margin-right: 15px;
+    /* margin-right: 15px; */
+    margin-left: 20px;
+}
+
+.footerSocialIcons small{
+    text-decoration: underline;
 }
 
 .footer hr{

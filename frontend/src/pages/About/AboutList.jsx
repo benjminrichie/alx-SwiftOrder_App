@@ -16,6 +16,7 @@ const AboutList = ({authorDetails}) => {
         designation={authorDetails[i].designation}
         email={authorDetails[i].email}
         phone={authorDetails[i].phone}
+        imageKey={user.imageKey}  // Pass the image key
         />
       )
     })
