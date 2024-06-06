@@ -39,4 +39,4 @@ To successfully run this code on your browser or to start the frontend developme
 
  6. Start the development Server:
 
-        npm run dev
+        npm run dev.
