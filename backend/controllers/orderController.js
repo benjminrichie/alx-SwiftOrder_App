@@ -8,7 +8,8 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY)
 // placing user order from frontend
 const placeOrder = async (req,res) => {
 
-    const frontend_url = "https://swiftorderfrontend.vercel.app/";
+    // const frontend_url = "http://localhost:5179";
+    const frontendUrl = req.get('Origin') || 'http://localhost:5179';
     // const frontendUrl = req.get('Origin') || 'http://localhost:5176';
 
     try {
@@ -27,7 +28,7 @@ const placeOrder = async (req,res) => {
                 product_data:{
                     name:item.name
                 },
-                unit_amount:item.price*100*80
+                unit_amount:item.price*50clear*80
             },
             quantity:item.quantity
         }))
