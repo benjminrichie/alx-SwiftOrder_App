@@ -82,7 +82,11 @@ app.use(express.json())
 app.use(cors())
 
 // db connection
-connectDB();
+// connectDB();
+connectDB().catch(error => {
+    console.error("Database connection failed:", error);
+    process.exit(1);
+});
 
 // api endpoints
 app.use("/api/food",foodRouter)
