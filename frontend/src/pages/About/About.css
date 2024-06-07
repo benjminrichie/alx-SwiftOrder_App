@@ -2,6 +2,7 @@
     margin: 30px auto;
     padding: 50px;
     box-shadow: 5px 5px 10px black;
+    /* animation: fadeIn 4s; */
 }
 
 
@@ -13,6 +14,7 @@
     margin-bottom: 20px;
     justify-content: center;
     align-items: center;
+    
 }
 
 .aboutWriteUp p{
@@ -23,6 +25,7 @@
     border-radius: 20px;
     align-items: center;
     font-family: 'Times New Roman', Times, serif;
+    animation: fadeIn 9s;
 }
 
 #mySpan{
@@ -34,16 +37,32 @@
 .aboutIconsContainer{
     display: flex;
     justify-content: space-between;
+    /* animation: fadeIn 4s; */
 }
 
 .bensIcons img{
     padding: 5px;
+    /* animation: fadeIn 15s; */
 }
 
 .yomexIcons img{
     padding: 5px;
+    /* animation: fadeIn 6s; */
 }
 
 .destinyIcons img{
     padding: 5px;
+    /* animation: fadeIn 7s; */
+}
+
+.bensIcons img{
+    animation: flyInBottom 5s ease-in-out;
+}
+
+.yomexIcons img{
+    animation: flyInBottom 5s ease-in-out;
+}
+
+.destinyIcons img{
+    animation: flyInBottom 5s ease-in-out;
 }
