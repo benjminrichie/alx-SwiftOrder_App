@@ -37,3 +37,6 @@ export const postData = async (data) => {
     throw error;
   }
 };
+
+export { API_BASE_URL };
+
