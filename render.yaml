@@ -1,3 +1,10 @@
-buildCommand: npm install
-startCommand: npm start
-buildDirectory: backend
+services:
+  - type: static
+    name: frontend
+    repo: https://github.com/benjminrichie/alx-SwiftOrder_App.git
+    branch: main
+    buildCommand: npm run build
+    publishPath: build
+    envVars:
+      - key: REACT_APP_API_BASE_URL
+        value: https://backend-alx-ko.onrender.com
