@@ -1,5 +1,6 @@
 .text{
     text-align: center;
+    animation: flyInTop 5s ease-in-out;
 }
 
 .text h3{
@@ -28,4 +29,8 @@
     border: 1px solid green;
     border-radius: 100px;
     box-shadow: 5px 5px 10px black;
+}
+
+.benjamin img{
+    animation: zoomIn 2s;
 }

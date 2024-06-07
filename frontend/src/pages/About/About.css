@@ -13,6 +13,7 @@
     margin-bottom: 20px;
     justify-content: center;
     align-items: center;
+    animation: fadeIn 9s;
 }
 
 .aboutWriteUp p{
@@ -46,4 +47,16 @@
 
 .destinyIcons img{
     padding: 5px;
+}
+
+.bensIcons img{
+    animation: flyInBottom 5s ease-in-out;
+}
+
+.yomexIcons img{
+    animation: flyInBottom 5s ease-in-out;
+}
+
+.destinyIcons img{
+    animation: flyInBottom 5s ease-in-out;
 }
