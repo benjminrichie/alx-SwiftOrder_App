@@ -34,9 +34,9 @@ To successfully run this code on your browser or to start the frontend developme
 
        ii. npm install axios
 
-       iii. npm install react react-router-dom.
+       iii. npm install react react-router-dom
 
 
  6. Start the development Server:
 
-        npm run dev.
+        npm run dev
