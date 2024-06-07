@@ -1,11 +1,12 @@
-import React from 'react';
+import React from 'react'
+import Navbar from './components/Navbar/Navbar'
+import Sidebar from './components/Sidebar/Sidebar'
+import { Routes,Route } from 'react-router-dom'
+import Add from './pages/Add/Add'
+import List from './pages/List/List'
+import Orders from './pages/Orders/Orders'
 import { ToastContainer } from 'react-toastify';
-import { Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Sidebar from './components/Sidebar';
-import Add from './pages/Add';
-import List from './pages/List';
-import Orders from './pages/Orders';
+import 'react-toastify/dist/ReactToastify.css';
 import { API_BASE_URL } from './api';
 
 const App = () => {
