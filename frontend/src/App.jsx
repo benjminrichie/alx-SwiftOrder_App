@@ -10,6 +10,7 @@ import LoginPopup from './components/LoginPopup/LoginPopup'
 import Verify from './pages/Verify/Verify'
 import MyOrders from './pages/MyOrders/MyOrders'
 import About from './pages/About/About'
+import { API_BASE_URL } from './api';
 
 // import React, { useState } from 'react'
 // import Navbar from './components/Navbar/Navbar'
@@ -27,24 +28,45 @@ const App = () => {
 
   const [showLogin,setShowLogin] = useState(false)
 
+
   return (
     <>
-    {showLogin?<LoginPopup setShowLogin={setShowLogin}/>:<></>}
-    <div className='app'>
-        <Navbar setShowLogin={setShowLogin}  />
+      {showLogin ? <LoginPopup setShowLogin={setShowLogin} /> : <></>}
+      <div className='app'>
+        <Navbar setShowLogin={setShowLogin} />
         <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/cart' element={<Cart />} />
-          <Route path='/order' element={<PlaceOrder />} />
-          <Route path='/verify' element={<Verify />} />
-          <Route path='/myorders' element={<MyOrders />} />
-          < Route path='/About' element={<About/>} />
+          <Route path='/' element={<Home url={API_BASE_URL} />} />
+          <Route path='/cart' element={<Cart url={API_BASE_URL} />} />
+          <Route path='/order' element={<PlaceOrder url={API_BASE_URL} />} />
+          <Route path='/verify' element={<Verify url={API_BASE_URL} />} />
+          <Route path='/myorders' element={<MyOrders url={API_BASE_URL} />} />
+          <Route path='/about' element={<About url={API_BASE_URL} />} />
         </Routes>
       </div>
       <Footer />
     </>
-  )
-}
+  );
+};
+
+
+//   return (
+//     <>
+//     {showLogin?<LoginPopup setShowLogin={setShowLogin}/>:<></>}
+//     <div className='app'>
+//         <Navbar setShowLogin={setShowLogin}  />
+//         <Routes>
+//           <Route path='/' element={<Home />} />
+//           <Route path='/cart' element={<Cart />} />
+//           <Route path='/order' element={<PlaceOrder />} />
+//           <Route path='/verify' element={<Verify />} />
+//           <Route path='/myorders' element={<MyOrders />} />
+//           < Route path='/About' element={<About/>} />
+//         </Routes>
+//       </div>
+//       <Footer />
+//     </>
+//   )
+// }
 
 // const App = () => {
 
