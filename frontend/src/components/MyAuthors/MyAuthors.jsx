@@ -7,7 +7,7 @@ const MyAuthors = ({id, name, designation, email, phone, imageKey}) => {
   return (
     <div>
         <div className='benjamin'>
-        <img className='ben' src={authors[imageKey]} alt="name" />
+        <img className='ben' src={authors[imageKey]} alt="Facial" />
         <div className="text">
           <h3>{name}</h3>
           <p>{designation}</p>
