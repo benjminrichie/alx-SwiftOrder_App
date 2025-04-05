@@ -4,10 +4,11 @@
   "main": "server.js",
   "type": "module",
   "scripts": {
-    "server": "nodemon server.js",
-    "start": "node server.js",
+  "server": "nodemon server.js",
+  "start": "node server.js",
   "build": "echo 'No build step required for backend'"
-  },
+},
+
   "author": "",
   "license": "ISC",
   "description": "1. To start the backend development Server make sure you are in the `backend` CD {folder/directory}",
