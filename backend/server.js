@@ -14,7 +14,10 @@ const port = 5000
 
 // middleware
 app.use(express.json())
-app.use(cors())
+app.use(cors({
+    origin: allowedOrigins,
+    credentials: true
+  }))
 
 // db connection
 connectDB();
