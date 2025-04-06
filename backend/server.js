@@ -11,6 +11,7 @@ import orderRouter from "./routes/orderRoute.js"
 // app config
 const app = express()
 const port = 5000
+const allowedOrigins = ['http://localhost:3000', 'https://swiftorder.vercel.app/'];
 
 // middleware
 app.use(express.json())
