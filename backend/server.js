@@ -10,7 +10,10 @@ import orderRouter from "./routes/orderRoute.js"
 
 // app config
 const app = express()
-const port = 5000
+// const port = 5000
+
+const PORT = process.env.PORT || 5000; // ✅ Use Render's assigned port
+
 const allowedOrigins = ['http://localhost:3000', 'https://swiftorder.vercel.app'];
 
 // middleware
@@ -36,8 +39,8 @@ app.get("/",(req,res)=>{
     res.send("API Working perfectly")
 })
 
-app.listen(port,()=>{
-    console.log(`Server Started on http://localhost:${port}`)
+app.listen(PORT,()=>{
+    console.log(`Server Started on http://localhost:${PORT}`)
 })
 
 // YOU CAN SAVE UR DATABASE IN THIS COMMENT IF U WANT --> 
