@@ -1,4 +1,4 @@
-1. To start the backend development Server make sure you are in the `backend` CD {folder/directory}
+1. To start the backend development Server make sure you are in the `backend` CD {folder/directory}.
 
         cd backend
 
